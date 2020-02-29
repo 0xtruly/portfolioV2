@@ -1,0 +1,12 @@
+// Mixins
+@mixin body-font {
+  font-family: 'Poppins', Regular;
+}
+
+@mixin heading-font {
+  font-family: 'Poppins', Medium;
+}
+
+@mixin bold-font {
+  font-family: 'Poppins', Black;
+}
