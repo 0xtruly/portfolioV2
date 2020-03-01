@@ -19,7 +19,7 @@ import '../assets/sass/resume.scss';
 
 const Layout = ({ children }) => {
   // runAos();
-  AOS.init();
+  // AOS.init();
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
