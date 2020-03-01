@@ -13,12 +13,14 @@ const IndexPage = () => (
         className="resume-section"
         id="about"
       >
-        <div className="w-100 flex">
+        <div className="w-100 flex"
+          data-aos="fade-up"
+          data-aos-duration="3000">
           <div className="mb-0">
-            <span className="salute">Hi, I'm</span>
-            <h1 className="name">{config.firstName} {config.lastName},</h1>
-            <h1 className="role">I {config.role}</h1>
-            <p className="lead mb-5">
+            <span className="salute offwhite">Hi, I'm</span>
+            <h1 className="name heading">{config.firstName} {config.lastName},</h1>
+            <h1 className="role heading">I {config.role}</h1>
+            <p className="lead mb-5 offwhite">
               {config.about}
             </p>
             <button className="cta-btn">{config.cta}</button>
@@ -26,7 +28,7 @@ const IndexPage = () => (
           <div className="about">
             <a className="about-link" href="https://github.com/Segun-Ade">
               <div className="avatar">
-                <img src="http://bit.ly/2TnpXv3" />
+                <img src={config.avatar} />
               </div>
             </a>
           </div>
@@ -43,86 +45,44 @@ const IndexPage = () => (
         </div>
       </section>
 
-      {/* <section
-        className="resume-section p-3 p-lg-5 d-flex justify-content-center"
+      <section
+        className="resume-section white-bg"
         id="experience"
       >
-        <div className="w-100">
-          <h2 className="mb-5">Experience</h2>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">Senior Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
-              <p>
-                Bring to the table win-win survival strategies to ensure
-                proactive domination. At the end of the day, going forward, a
-                new normal that has evolved from generation X is on the runway
-                heading towards a streamlined cloud solution. User generated
-                content in real-time will have multiple touchpoints for
-                offshoring.
-              </p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">March 2013 - Present</span>
+        <div className="w-100 flex">
+          <div className="mb-0">
+            <div>
+              <h1 className="about-h blue-2 heading">About me</h1>
+              <p className="lead mb-5 black">{config.aboutMe}</p>
             </div>
           </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
-              <p>
-                Capitalize on low hanging fruit to identify a ballpark value
-                added activity to beta test. Override the digital divide with
-                additional clickthroughs from DevOps. Nanotechnology immersion
-                along the information highway will close the loop on focusing
-                solely on the bottom line.
-              </p>
+          <div className="wd-100">
+            <div>
+              <h3 className="blue-2">Core Technologies</h3>
+              <ul className="list-n">
+                {config.coreSkills.map(skills => {
+                  return (
+                    <li className="black lead" key={skills.tech}>{skills.tech}</li>
+                  )
+                })}
+              </ul>
             </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">December 2011 - March 2013</span>
-            </div>
-          </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">Junior Web Designer</h3>
-              <div className="subheading mb-3">Shout! Media Productions</div>
-              <p>
-                Podcasting operational change management inside of workflows to
-                establish a framework. Taking seamless key performance
-                indicators offline to maximise the long tail. Keeping your eye
-                on the ball while performing a deep dive on the start-up
-                mentality to derive convergence on cross-platform integration.
-              </p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">July 2010 - December 2011</span>
-            </div>
-          </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
-            <div className="resume-content">
-              <h3 className="mb-0">Web Design Intern</h3>
-              <div className="subheading mb-3">Shout! Media Productions</div>
-              <p>
-                Collaboratively administrate empowered markets via plug-and-play
-                networks. Dynamically procrastinate B2C users after installed
-                base benefits. Dramatically visualize customer directed
-                convergence without revolutionary ROI.
-              </p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">September 2008 - June 2010</span>
+            <div>
+              <h3 className="blue-2">Others</h3>
+              <ul className="list-n">
+                {config.otherSkills.map(skills => {
+                  return (
+                    <li className="black lead" key={skills.tech}>{skills.tech}</li>
+                  )
+                })}
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <hr className="m-0" />
 
-      <section
+      {/*<section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="education"
       >

@@ -2,10 +2,23 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import '../assets/sass/resume.scss';
 
+
+const runAos = () => {
+  AOS.init({
+    delay: 10,
+    duration: 1200,
+    mirror: false,
+    offset: 0,
+  });
+};
+
 const Layout = ({ children }) => {
+  runAos();
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

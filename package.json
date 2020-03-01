@@ -11,6 +11,7 @@
     "email": "adebanjosegun589@gmail.com"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "gatsby": "^2.4.3",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.0",
