@@ -8,17 +8,18 @@ import 'aos/dist/aos.css';
 import '../assets/sass/resume.scss';
 
 
-const runAos = () => {
-  AOS.init({
-    delay: 0,
-    duration: 1200,
-    mirror: false,
-    offset: 0,
-  });
-};
+// const runAos = () => {
+//   AOS.init({
+//     delay: 0,
+//     duration: 1200,
+//     mirror: false,
+//     offset: 0,
+//   });
+// };
 
 const Layout = ({ children }) => {
-  runAos();
+  // runAos();
+  AOS.init();
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
