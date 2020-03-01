@@ -22,6 +22,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-images": "^0.5.19",
+    "react-loadingg": "^1.7.1",
     "react-scrollspy": "^3.4.0",
     "smoothscroll-polyfill": "^0.4.4"
   },

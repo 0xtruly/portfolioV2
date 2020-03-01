@@ -13,7 +13,8 @@ const IndexPage = () => (
         className="resume-section"
         id="about"
       >
-        <div className="w-100 flex">
+        <div className="w-100 flex" data-aos="fade-up"
+          data-aos-duration="3000">
           <div className="mb-0">
             <span className="salute offwhite">Hi, I'm</span>
             <h1 className="name heading">{config.firstName} {config.lastName},</h1>
