@@ -10,7 +10,7 @@ import '../assets/sass/resume.scss';
 
 const runAos = () => {
   AOS.init({
-    delay: 10,
+    delay: 0,
     duration: 1200,
     mirror: false,
     offset: 0,
