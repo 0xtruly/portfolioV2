@@ -37,7 +37,7 @@ module.exports = {
     NG specializing in building\n\
     exceptional, high-quality websites and applications.',
     cta: 'Get in touch',
-    avatar: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/v1578398078/Segun-Adebanjo-ConvertImage-removebg_3.png',
+    avatar: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/v1584477727/_Segun-removebg-preview.png',
     // avatar: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/v1582931419/cartoon1.png',
     coreSkills: [
         {
