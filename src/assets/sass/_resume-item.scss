@@ -12,6 +12,11 @@ section.resume-section {
   }
 }
 
+footer.resume-section {
+  padding: 0 45px;
+  padding-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -33,4 +38,68 @@ section.resume-section {
 
 .white-bg {
   background: $white-200;
+}
+
+.card {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  max-width: 545px;
+  width: 100%;
+  height: 140px;
+  margin: 15px 0;
+
+  @media (min-width: 992px) {
+    height: 425px;
+  }
+}
+
+.numb_one {
+  background-image: linear-gradient(#2b5e9908, #2b5e9954), url(https://res.cloudinary.com/dcp4ezo2a/image/upload/v1583163315/imac-portfolio.png);
+}
+
+.numb_two {
+  background-image: linear-gradient(#2b5e9908, #2b5e9954), url(https://res.cloudinary.com/dcp4ezo2a/image/upload/v1583163315/cleanIT-mock.png);
+}
+
+.numb_three {
+  background-image: linear-gradient(#2b5e9908, #2b5e9954), url(https://res.cloudinary.com/dcp4ezo2a/image/upload/v1583163315/imac-portfolio.png);
+}
+
+.numb_four {
+  background-image: linear-gradient(#2b5e9908, #2b5e9954), url(https://res.cloudinary.com/dcp4ezo2a/image/upload/v1583163315/cleanIT-mock.png);
+}
+
+ul.social-group {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  padding-left: 25px;
+
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+
+  li {
+    background-color: $white;
+    border-radius: 10%;
+    display: inline-table;
+    margin-right: 30px;
+
+    a svg[role ^='img'] {
+      width: 20px;
+      height: 40px;
+      padding: 0 10px;
+      fill: $navy-blue;
+      display: block;
+
+      @media only screen and (min-width: 768px) {
+        width: 50px;
+        height: 70px;
+
+      }
+    }
+  }
 }

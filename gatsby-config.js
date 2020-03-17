@@ -1,4 +1,4 @@
-const config = require('./config');
+const config = require('./src/config');
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -21,5 +21,21 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@components": "src/components",
+          "@layouts": "src/components/Layout",
+          "@pages": "src/pages",
+          "@sass": "src/assets/sass",
+          "@config": "src/config",
+        },
+        extensions: [
+          "js",
+        ],
+      }
+    },
   ],
 };

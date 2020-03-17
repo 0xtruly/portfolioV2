@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 
-import config from '../../config';
+import config from '@config';
 
 export const Navbar = () => {
   const [tabs, setTabs] = useState(

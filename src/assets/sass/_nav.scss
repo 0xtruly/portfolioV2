@@ -149,13 +149,24 @@
         >ul>li {
           list-style: none;
           color: #ffffff;
-          font-size: 1.5rem;
-          padding: 1rem;
+          font-size: 1.3rem;
+          padding: 5px 25px;
+          // padding-left: 30px;
 
           >a {
             color: inherit;
             text-decoration: none;
             transition: color .3s ease;
+          }
+        }
+
+        >ul>li:nth-child(4) {
+          >a {
+            background: $lemon;
+            color: $navy-blue;
+            font-weight: 500;
+            padding: 8px 30px;
+            border-radius: 2px;
           }
         }
       }
