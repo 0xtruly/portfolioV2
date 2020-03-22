@@ -14,17 +14,14 @@ module.exports = {
     // social
     socialLinks: [
         {
-            icon: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/c_scale,h_24,w_24/v1583332227/Github.svg',
             name: 'Github',
             url: 'https://github.com/segun-ade',
         },
         {
-            icon: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/c_scale,h_24,w_24/v1583332259/Linkedin.svg',
             name: 'Linkedin',
             url: 'https://linkedin.com/in/sadebanjo/',
         },
         {
-            icon: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/c_scale,h_24,w_24/v1583332277/twitter.svg',
             name: 'Twitter',
             url: 'https://twitter.com/__adeniyi',
         },
@@ -37,7 +34,7 @@ module.exports = {
     NG specializing in building\n\
     exceptional, high-quality websites and applications.',
     cta: 'Get in touch',
-    avatar: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/v1584477727/_Segun-removebg-preview.png',
+    avatar: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1584477727/_Segun-removebg-preview.png',
     // avatar: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/v1582931419/cartoon1.png',
     coreSkills: [
         {
@@ -84,28 +81,48 @@ module.exports = {
     great websites and web apps that provide intuitive, pixel-perfect user interfaces.',
     projects: [
         {
-            name: 'portfolio',
+            name: 'Portfolio V2',
             index: 'one',
             url: 'https://segunadebanjo.me/',
-            github: 'https://github.com/Segun-Ade/portfolioV1'
+            github: 'https://github.com/Segun-Ade/portfolioV1',
+            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1583163315/imac-portfolio.png',
+            details: 'A second iteration of my personal portfolio page',
+            tools: [
+                'GatsbyJs',
+            ]
         },
         {
-            name: 'cleanIT',
+            name: 'CleanIT',
             index: 'two',
             url: 'https://cleanit-7147d.firebaseapp.com/',
-            github: 'https://github.com/Enye-Team-Cougar/cleanit-frontend'
+            github: 'https://github.com/Enye-Team-Cougar/cleanit-frontend',
+            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1584477222/clean.png',
+            details: 'A web app that connects laundry outlets with prospective customers, while providing realtime analytics and business insights',
+            tools: [
+                'React with Hooks', 'NodeJs', 'Express', 'Firebase', 'Google location Api', 'Ant Design'
+            ]
         },
         {
-            name: 'soundio',
+            name: 'Soundio',
             index: 'three',
             url: 'https://soundio.netlify.com/',
-            github: 'https://github.com/Segun-Ade/music-app'
+            github: 'https://github.com/Segun-Ade/music-app',
+            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1584475622/soundio1.jpg',
+            details: ' A web app that allows you to preview music tracks and search for your favourite tracks',
+            tools: [
+                'React', 'Context Api', 'Deezer music Api', 'CSS in Js'
+            ]
         },
         {
-            name: 'huddle',
+            name: 'Huddle',
             index: 'four',
             url: 'https://huddle-landing.surge.sh/',
-            github: 'https://github.com/Segun-Ade/Huddle-1'
+            github: 'https://github.com/Segun-Ade/Huddle-1',
+            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1584475560/huddle1.jpg',
+            details: 'A personal implementation of the frontend mentor landing page challenge',
+            tools: [
+                'Html', 'CSS'
+            ]
         },
     ],
     sayHi: 'You can chat me up to discuss your project or just to say hi',
@@ -128,5 +145,19 @@ module.exports = {
             type: 'text',
             key: 'message'
         },
-    ]
+    ],
+    projectLinks: [
+        {
+            name: 'Github',
+            url: 'https://github.com/segun-ade',
+        },
+        {
+            name: 'Linkedin',
+            url: 'https://linkedin.com/in/sadebanjo/',
+        },
+        {
+            name: 'Twitter',
+            url: 'https://twitter.com/__adeniyi',
+        },
+    ],
 };
