@@ -1,10 +1,10 @@
 module.exports = {
-    siteTitle: 'Segun Adebanjo | frontend engineer', // <title>
+    siteTitle: 'Segun Adebanjo | Software Engineer', // <title>
     manifestName: 'Portfolio',
     manifestShortName: 'Portfolio', // max 12 characters
     manifestStartUrl: 'https://segunadebanjo.me',
-    manifestBackgroundColor: '#070713',
-    manifestThemeColor: '#070713',
+    manifestBackgroundColor: '#0e0f22',
+    manifestThemeColor: '#0e0f22',
     manifestDisplay: 'standalone',
     manifestIcon: 'src/assets/img/favicon-16x16.png',
     pathPrefix: `/v2/`, // This path is subpath of your hosting https://domain/portfolio
@@ -85,7 +85,7 @@ module.exports = {
             index: 'one',
             url: 'https://segunadebanjo.me/',
             github: 'https://github.com/Segun-Ade/portfolioV1',
-            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1583163315/imac-portfolio.png',
+            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/c_fit,f_auto,h_450,q_auto/v1583163315/imac-portfolio.png',
             details: 'A second iteration of my personal portfolio page',
             tools: [
                 'GatsbyJs',
@@ -96,7 +96,7 @@ module.exports = {
             index: 'two',
             url: 'https://cleanit-7147d.firebaseapp.com/',
             github: 'https://github.com/Enye-Team-Cougar/cleanit-frontend',
-            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1584477222/clean.png',
+            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/c_fit,f_auto,h_450,q_auto/v1584477222/clean.png',
             details: 'A web app that connects laundry outlets with prospective customers, while providing realtime analytics and business insights',
             tools: [
                 'React with Hooks', 'NodeJs', 'Express', 'Firebase', 'Google location Api', 'Ant Design'
@@ -107,7 +107,7 @@ module.exports = {
             index: 'three',
             url: 'https://soundio.netlify.com/',
             github: 'https://github.com/Segun-Ade/music-app',
-            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1584475622/soundio1.jpg',
+            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/c_scale,f_auto,h_450,q_auto/v1584475622/soundio1.jpg',
             details: ' A web app that allows you to preview music tracks and search for your favourite tracks',
             tools: [
                 'React', 'Context Api', 'Deezer music Api', 'CSS in Js'
@@ -118,7 +118,7 @@ module.exports = {
             index: 'four',
             url: 'https://huddle-landing.surge.sh/',
             github: 'https://github.com/Segun-Ade/Huddle-1',
-            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1584475560/huddle1.jpg',
+            src: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/c_fit,f_auto,h_450,q_auto/v1584475560/huddle1.jpg',
             details: 'A personal implementation of the frontend mentor landing page challenge',
             tools: [
                 'Html', 'CSS'

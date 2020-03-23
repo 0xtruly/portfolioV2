@@ -35,7 +35,7 @@ const IndexPage = () => {
             <div className="about">
               <a className="about-link" href="https://github.com/Segun-Ade">
                 <figure className="avatar">
-                  <img src={config.avatar} alt="avatar" />
+                  <img src={config.avatar} alt="Segun Adebanjo" />
                 </figure>
               </a>
             </div>
@@ -99,6 +99,7 @@ const IndexPage = () => {
                         {name}
                       </a>
                     </h5>
+
                     <div className="featured details">
                       <p>{details}</p>
                     </div>
@@ -139,7 +140,7 @@ const IndexPage = () => {
           </div>
         </section>
 
-        <section className="resume-section white-bg" id="awards">
+        <section className="resume-section white-bg" id="contact">
           <div className="w-100 flex">
             <div className="form-group">
               <article>

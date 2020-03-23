@@ -18,7 +18,7 @@
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
     @media (min-width: 992px) {
       display: none;
@@ -74,7 +74,8 @@
 
   /*Rotate on hover when checked*/
   .toggler:checked:hover+.hamburger>div {
-    transform: rotate(360deg);
+    transform: rotate(224deg);
+    top: 5px;
   }
 
   /*show menu*/
@@ -90,11 +91,16 @@
   .toggler:checked~.menu>div>div {
     opacity: 1;
     transition: opacity .4s ease;
+
+    ul.navbar-nav {
+      margin: 45px auto;
+      padding: 0;
+    }
   }
 
   .menu {
     position: fixed;
-    top: 0;
+    top: -20px;
     right: 0;
     width: 100%;
     height: 100%;
@@ -103,6 +109,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 0;
 
     @media (min-width: 992px) {
       visibility: visible;
@@ -150,8 +157,7 @@
           list-style: none;
           color: #ffffff;
           font-size: 1em;
-          padding: 5px 25px;
-          // padding-left: 30px;
+          padding: 30px 25px;
 
           >a {
             color: inherit;

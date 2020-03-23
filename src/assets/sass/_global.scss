@@ -219,7 +219,7 @@ aside.socials {
 }
 
 .heading {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   line-height: 3rem;
   font-weight: 600;
 
@@ -229,7 +229,7 @@ aside.socials {
 }
 
 .salute {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 600;
 
   @media (min-width: 768px) {
@@ -248,6 +248,7 @@ aside.socials {
 .wd-100 {
   width: 100%;
   max-width: 330px;
+  margin-left: 15px;
 }
 
 .w-100 {
@@ -282,10 +283,12 @@ aside.socials {
     grid-column: 6/-1;
     grid-row: 1/-1;
     z-index: 1;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
 
     @media (max-width: 37.5em) {
-      opacity: 0.25;
+      opacity: 0.8;
       grid-column: 1 / -1;
+      background-color: #526100;
     }
 
     @media (max-width: 48em) {
@@ -317,7 +320,12 @@ aside.socials {
   a.image-link:hover::before {
     background-color: unset;
     mix-blend-mode: unset;
-    z-index: unset;
+    z-index: 0;
+    width: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   }
 
@@ -357,8 +365,9 @@ aside.socials {
       grid-column: 1/8;
 
       @media (max-width: 37.5em) {
-        opacity: 0.25;
+        opacity: 0.8;
         grid-column: 1 / -1;
+        background-color: #526100;
       }
 
       @media (max-width: 48em) {
@@ -424,7 +433,7 @@ aside.socials {
       position: relative;
       z-index: 2;
       background-color: rgb(27, 27, 50);
-      color: rgb(168, 178, 209);
+      color: #ced7f2;
       font-size: 18px;
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
       padding: 25px;
@@ -456,7 +465,7 @@ aside.socials {
         white-space: nowrap;
 
         @media (max-width: 37.5em) {
-          color: rgb(204, 214, 246);
+          color: rgb(255, 255, 255);
           margin-right: 10px;
         }
       }
@@ -524,6 +533,10 @@ aside.socials {
     background-position: center center;
     background-size: contain;
     margin: 10px 0;
+
+    @media (max-width: 48em) {
+      margin: 0 auto;
+    }
 
     @media (min-width: 992px) {
       margin: 10px 20px;

@@ -15,7 +15,6 @@ section.resume-section {
 
 
   .resume-item {
-    .resume-content {}
 
     .resume-date {
       min-width: none;
@@ -30,7 +29,7 @@ footer.resume-section {
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+    min-height: 80vh;
 
     .resume-item {
       .resume-date {
@@ -57,7 +56,7 @@ footer.resume-section {
   background-repeat: no-repeat;
   max-width: 100%;
   width: 100%;
-  margin: 15px 0;
+  // margin: 15px 0;
   @include addFilter();
 
   @media (max-width: 48em) {
@@ -66,10 +65,6 @@ footer.resume-section {
     height: 100%;
     filter: grayscale(100%) contrast(1) brightness(80%);
   }
-
-  // @media (min-width: 992px) {
-  //   height: 450px;
-  // }
 }
 
 .numb_ {
@@ -79,7 +74,9 @@ footer.resume-section {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  transition-delay: 500ms
+  transition-delay: 500ms;
+  display: -webkit-box;
+
 }
 
 .card:hover {
