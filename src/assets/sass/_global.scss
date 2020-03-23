@@ -507,18 +507,27 @@ aside.socials {
   flex-direction: column;
   justify-content: center;
 
-  button.cta-btn {
+  .cta-btn {
     border: 2px solid $lemon;
     border-radius: 4px;
     opacity: 1;
     background-color: transparent;
     color: $lemon;
-    padding: 0.5rem 1rem;
+    padding: 0rem 1rem;
     font-family: inherit;
     margin-bottom: 2rem;
     font-size: 1em;
     width: 180px;
     height: 50px;
+    padding-top: 1rem;
+    text-align: center;
+
+    a:visited,
+    a:active,
+    a:hover,
+    a:focus {
+      text-decoration: none;
+    }
   }
 
   @media (min-width: 992px) {

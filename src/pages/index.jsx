@@ -3,7 +3,8 @@ import React, { useMemo } from 'react';
 import Layout from '@components/Layout';
 
 import { Link } from 'gatsby';
-import Icon from '@ant-design/icons';
+import Scrollspy from 'react-scrollspy';
+import Scroll from '@components/Scroll';
 import Navbar from '@components/Navbar';
 import * as config from '@config';
 import { FormattedIcon, ProjectIcon } from '@components/icons';
@@ -30,7 +31,13 @@ const IndexPage = () => {
               </h1>
               <h1 className="role heading">I {config.role}</h1>
               <p className="lead mb-5 offwhite">{config.about}</p>
-              <button className="cta-btn">{config.cta}</button>
+              <Scrollspy offset={-300} className="cta-btn">
+                <Scroll type="id" element="contact" className="cta-btn">
+                  <a className="nav-link" href="#contact">
+                    {config.cta}
+                  </a>
+                </Scroll>
+              </Scrollspy>
             </article>
             <div className="about">
               <a className="about-link" href="https://github.com/Segun-Ade">
