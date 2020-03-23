@@ -1,13 +1,13 @@
 module.exports = {
-    siteTitle: 'Segun Adebanjo | Software Engineer', // <title>
+    siteTitle: 'Segun Adebanjo | Software Engineer based in Lagos Nigeria', // <title>
     manifestName: 'Portfolio',
     manifestShortName: 'Portfolio', // max 12 characters
     manifestStartUrl: 'https://segunadebanjo.me',
-    manifestBackgroundColor: '#0e0f22',
-    manifestThemeColor: '#0e0f22',
+    manifestBackgroundColor: '#11122a',
+    manifestThemeColor: '#11122a',
     manifestDisplay: 'standalone',
     manifestIcon: 'src/assets/img/favicon-16x16.png',
-    pathPrefix: `/v2/`, // This path is subpath of your hosting https://domain/portfolio
+    pathPrefix: `https://segunadebanjo.me/`, // This path is subpath of your hosting https://domain/portfolio
     firstName: 'Segun',
     lastName: 'Adebanjo',
 
