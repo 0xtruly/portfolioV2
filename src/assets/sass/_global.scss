@@ -126,7 +126,7 @@ h3 {
       border-top: 0;
       border-right: 0;
       border-left: 0;
-      border-bottom: 1px solid $blue-200;
+      border-bottom: 1px solid $white;
       margin: 1.5rem 0;
       outline: none;
     }
@@ -136,7 +136,7 @@ h3 {
     }
 
     .form-field::placeholder {
-      color: $blue-200;
+      color: $white;
       font-size: 17px;
       font-weight: 400;
       @include body-font;
@@ -154,7 +154,7 @@ h3 {
       margin: 10px 0;
       padding: 5px 5px;
       letter-spacing: 2px;
-      color: $blue-200;
+      color: $white;
       border: 1px solid;
       border-radius: 4px;
       outline: 0;
@@ -206,8 +206,8 @@ aside.socials {
   color: $black;
 }
 
-.blue-2 {
-  color: $blue-200;
+.white-2 {
+  color: $custom-white;
 }
 
 .bg-white {
@@ -215,7 +215,7 @@ aside.socials {
 }
 
 .bg-navy-blue {
-  background-color: $navy-blue;
+  background-color: $custom-navy;
 }
 
 .heading {
@@ -507,18 +507,29 @@ aside.socials {
   flex-direction: column;
   justify-content: center;
 
-  button.cta-btn {
+  .cta-btn {
     border: 2px solid $lemon;
     border-radius: 4px;
     opacity: 1;
     background-color: transparent;
     color: $lemon;
-    padding: 0.5rem 1rem;
+    padding: 0rem 1rem;
     font-family: inherit;
     margin-bottom: 2rem;
     font-size: 1em;
     width: 180px;
     height: 50px;
+    padding-top: 1rem;
+    text-align: center;
+
+    a,
+    a:visited,
+    a:active,
+    a:hover,
+    a:focus {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 
   @media (min-width: 992px) {

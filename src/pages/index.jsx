@@ -3,7 +3,8 @@ import React, { useMemo } from 'react';
 import Layout from '@components/Layout';
 
 import { Link } from 'gatsby';
-import Icon from '@ant-design/icons';
+import Scrollspy from 'react-scrollspy';
+import Scroll from '@components/Scroll';
 import Navbar from '@components/Navbar';
 import * as config from '@config';
 import { FormattedIcon, ProjectIcon } from '@components/icons';
@@ -30,7 +31,13 @@ const IndexPage = () => {
               </h1>
               <h1 className="role heading">I {config.role}</h1>
               <p className="lead mb-5 offwhite">{config.about}</p>
-              <button className="cta-btn">{config.cta}</button>
+              <Scrollspy offset={-300} className="cta-btn">
+                <Scroll type="id" element="contact" className="cta-btn">
+                  <a className="nav-link" href="#contact">
+                    {config.cta}
+                  </a>
+                </Scroll>
+              </Scrollspy>
             </article>
             <div className="about">
               <a className="about-link" href="https://github.com/Segun-Ade">
@@ -42,21 +49,21 @@ const IndexPage = () => {
           </div>
         </section>
 
-        <section className="resume-section white-bg" id="about">
+        <section className="resume-section" id="about">
           <div className="w-100 flex">
             <article className="mb-0">
               <div>
-                <h1 className="about-h blue-2 heading">About me</h1>
-                <p className="lead mb-5 black">{config.aboutMe}</p>
+                <h1 className="about-h white-2 heading">About me</h1>
+                <p className="lead mb-5">{config.aboutMe}</p>
               </div>
             </article>
             <article className="wd-100">
               <div>
-                <h3 className="blue-2 mb-0">Core Technologies</h3>
+                <h3 className="white-2 mb-0">Core Technologies</h3>
                 <ul className="ls-none m-0 p-0">
                   {config.coreSkills.map(skills => {
                     return (
-                      <li className="black lead" key={skills.tech}>
+                      <li className="lead" key={skills.tech}>
                         {skills.tech}
                       </li>
                     );
@@ -64,11 +71,11 @@ const IndexPage = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="blue-2 mb-0">Others</h3>
+                <h3 className="white-2 mb-0">Others</h3>
                 <ul className="ls-none m-0 p-0">
                   {config.otherSkills.map(skills => {
                     return (
-                      <li className="black lead" key={skills.tech}>
+                      <li className="lead" key={skills.tech}>
                         {skills.tech}
                       </li>
                     );
@@ -140,12 +147,12 @@ const IndexPage = () => {
           </div>
         </section>
 
-        <section className="resume-section white-bg" id="contact">
+        <section className="resume-section" id="contact">
           <div className="w-100 flex">
             <div className="form-group">
               <article>
                 <h2 className="contact blue-2 heading">Get in touch</h2>
-                <p className="lead mb-5 black">{config.sayHi}</p>
+                <p className="lead mb-5">{config.sayHi}</p>
               </article>
               <form action="https://formspree.io/mgeylaje" method="POST">
                 {config.formStrings.map(str => {
@@ -201,7 +208,7 @@ const IndexPage = () => {
             </aside>
           </div>
         </section>
-        <footer className="resume-section text-c">
+        <footer className="resume-section text-c bg-navy-blue">
           <p className="lead">
             &copy; Segun Adebanjo <span className="lead">{currentDate}</span>.
             All rights reserved
