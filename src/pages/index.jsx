@@ -53,7 +53,7 @@ const IndexPage = () => {
           <div className="w-100 flex">
             <article className="mb-0">
               <div>
-                <h1 className="about-h white-2 heading">About me</h1>
+                <h1 className="about-h heading">About me</h1>
                 <p className="lead mb-5">{config.aboutMe}</p>
               </div>
             </article>

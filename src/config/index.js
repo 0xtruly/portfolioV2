@@ -10,6 +10,7 @@ module.exports = {
     pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
     firstName: 'Segun',
     lastName: 'Adebanjo',
+    logo: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1585081425/logotext-removebg-preview.png',
 
     // social
     socialLinks: [
