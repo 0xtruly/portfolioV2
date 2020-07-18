@@ -79,7 +79,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-.navbar-nav>a {
+.navbar-nav > a {
   @include heading-font;
 }
 
@@ -273,7 +273,8 @@ aside.socials {
   visibility: visible;
   opacity: 1;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+    transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   margin-bottom: 100px;
 
   @media (max-width: 37.5em) {
@@ -301,7 +302,7 @@ aside.socials {
   }
 
   a.image-link::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 100%;
@@ -603,7 +604,7 @@ aside.socials {
 
     .about-link::before,
     .about-link::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 250px;
@@ -653,28 +654,25 @@ h2[class*="projects"]::after {
 }
 
 h1[class*="about"]::after {
-  transform: translate(60px, -20px) rotate(180deg) scale(.5);
+  transform: translate(60px, -20px) rotate(180deg) scale(0.5);
 
-
-  @media(max-width: 30em) {
-    transform: translate(100px, -20px) rotate(180deg) scale(.5);
+  @media (max-width: 30em) {
+    transform: translate(100px, -20px) rotate(180deg) scale(0.5);
   }
 
-  @media(max-width: 20em) {
-    transform: translate(100px, -20px) rotate(180deg) scale(.4);
+  @media (max-width: 20em) {
+    transform: translate(100px, -20px) rotate(180deg) scale(0.4);
   }
 
   // @media(max-width: 37.5em) {
   //   transform: translate(100px, -20px) rotate(180deg) scale(.5);
   // }
-
 }
 
 h2[class*="projects"]::after {
-
   transform: translate(85px, -20px) rotate(180deg) scale(0.5);
 
-  @media(min-width: 22em) {
+  @media (min-width: 22em) {
     transform: translate(140px, -20px) rotate(180deg) scale(0.2);
   }
 
@@ -687,7 +685,6 @@ h2[class*="projects"]::after {
   }
 
   @media (min-width: 1200px) {
-    transform: translate(40px, -20px) rotate(180deg) scale(.35);
+    transform: translate(40px, -20px) rotate(180deg) scale(0.35);
   }
-
 }

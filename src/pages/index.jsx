@@ -50,7 +50,11 @@ const IndexPage = () => {
         </section>
 
         <section className="resume-section" id="about">
-          <div className="w-100 flex">
+          <div
+            className="w-100 flex"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+          >
             <article className="mb-0">
               <div>
                 <h1 className="about-h heading">About me</h1>
@@ -93,7 +97,12 @@ const IndexPage = () => {
             {config.projects.map(project => {
               const { details, github, index, name, src, url, tools } = project;
               return (
-                <div className="flex-card">
+                <div
+                  className="flex-card"
+                  data-aos="fade-right"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                >
                   <div className="featured content">
                     <h4>Featured Project</h4>
                     <h5>
