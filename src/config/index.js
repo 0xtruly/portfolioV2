@@ -33,7 +33,7 @@ module.exports = {
   address: 'Ojodu Berger, Lagos, NG',
   role: 'build things for the web.',
   about:
-    " I'm a frontend engineer based in Lagos\n,\
+    " I'm a software engineer based in Lagos\n,\
     NG specializing in building\n\
     exceptional, high-quality websites and applications.",
   cta: 'Get in touch',
