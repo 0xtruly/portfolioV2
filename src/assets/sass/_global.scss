@@ -129,6 +129,7 @@ h3 {
       border-bottom: 1px solid $white;
       margin: 1.5rem 0;
       outline: none;
+      padding: 4px 0;
     }
 
     textarea.form-field {
@@ -302,7 +303,7 @@ aside.socials {
   }
 
   a.image-link::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     width: 100%;
@@ -406,7 +407,8 @@ aside.socials {
       padding-top: 0;
       margin-top: 10px;
       color: $lemon;
-      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+      font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+        'Lucida Console', Monaco, monospace;
     }
 
     h5 {
@@ -462,7 +464,8 @@ aside.socials {
       // justify-content: flex-end;
 
       li {
-        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+          'Lucida Console', Monaco, monospace;
         font-size: 13px;
         color: rgb(136, 146, 176);
         margin-right: 20px;
@@ -604,7 +607,7 @@ aside.socials {
 
     .about-link::before,
     .about-link::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       width: 250px;
@@ -644,16 +647,16 @@ aside.socials {
   }
 }
 
-h1[class*="about"]::after,
-h2[class*="projects"]::after {
-  content: "";
+h1[class*='about']::after,
+h2[class*='projects']::after {
+  content: '';
   border: 1px solid;
   width: 100%;
   display: block;
   height: 1px;
 }
 
-h1[class*="about"]::after {
+h1[class*='about']::after {
   transform: translate(60px, -20px) rotate(180deg) scale(0.5);
 
   @media (max-width: 30em) {
@@ -669,7 +672,7 @@ h1[class*="about"]::after {
   // }
 }
 
-h2[class*="projects"]::after {
+h2[class*='projects']::after {
   transform: translate(85px, -20px) rotate(180deg) scale(0.5);
 
   @media (min-width: 22em) {
