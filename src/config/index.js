@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: 'Segun Adebanjo | Software Engineer based in Lagos Nigeria', // <title>
   manifestName: 'Portfolio',
   manifestShortName: 'Portfolio', // max 12 characters
-  manifestStartUrl: 'https://segunadebanjo.me',
+  manifestStartUrl: 'https://sublimeaker.com',
   manifestBackgroundColor: '#11122a',
   manifestThemeColor: '#11122a',
   manifestDisplay: 'standalone',
@@ -31,27 +31,31 @@ module.exports = {
   email: 'adebanjosegun589@gmail.com',
   phone: '234-802-7930-045',
   address: 'Ojodu Berger, Lagos, NG',
-  role: 'build things for the web.',
+  role: 'build things for web and mobile.',
   about:
     " I'm a software engineer based in Lagos\n,\
-    NG specializing in building\n\
-    exceptional, high-quality websites and applications.",
+    Nigeria specializing in building\n\
+    amazing products inline with set business goals.",
   cta: 'Get in touch',
   avatar:
-    'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1584477727/_Segun-removebg-preview.png',
+    // 'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto/v1613081759/IMG_20200909_100528-removebg-preview.png',
+  'https://res.cloudinary.com/dcp4ezo2a/image/upload/f_auto,q_auto/v1584477727/_Segun-removebg-preview.png',
   // avatar: 'https://res.cloudinary.com/dcp4ezo2a/image/upload/v1582931419/cartoon1.png',
   coreSkills: [
     {
-      tech: 'Javascript/ES6+',
+      tech: 'ECMAScript',
     },
     {
-      tech: 'ReactJs',
+      tech: 'ReactJs/Native',
     },
     {
       tech: 'Redux/Sagas',
     },
     {
       tech: 'HTML/(S)CSS',
+    },
+    {
+      tech: 'Firebase',
     },
     {
       tech: 'Ant Design',
@@ -65,9 +69,6 @@ module.exports = {
   ],
   otherSkills: [
     {
-      tech: 'Firebase',
-    },
-    {
       tech: 'GatsbyJs',
     },
     {
@@ -77,13 +78,13 @@ module.exports = {
       tech: 'Node / Express',
     },
     {
-      tech: 'Laravel',
+      tech: 'MongoDb',
     },
   ],
   aboutMe:
     "Hello! I'm Segun, a frontend engineer based in Lagos,\
-    Nigeria who enjoys building things that lives on the internet. I develop\n\
-    great websites and web apps that provide intuitive, pixel-perfect user interfaces.",
+    Nigeria who enjoys building products that leverage the internet. I develop\n\
+    great websites, web and mobile apps that provide intuitive, pixel-perfect user interfaces that meet business goals. As an engineer, my primary drive is to build usable products",
   projects: [
     {
       name: 'Portfolio V2',
