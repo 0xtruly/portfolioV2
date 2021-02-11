@@ -25,6 +25,10 @@ section.resume-section {
 footer.resume-section {
   padding: 0 45px;
   padding-bottom: 1rem;
+
+  p {
+    padding-top: 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -43,6 +47,13 @@ footer.resume-section {
   section.resume-section {
     padding-top: 4rem !important;
     padding-bottom: 1rem !important;
+    min-height: 50vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.resume-section {
+    min-height: 70vh;
   }
 }
 

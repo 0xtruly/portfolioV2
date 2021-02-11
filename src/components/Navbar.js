@@ -14,9 +14,11 @@ export const Navbar = () => {
     ]
   );
 
+
   console.log(tabs)
   return (
-    <div className="menu-wrap">
+    <nav className="menu-wrap">
+      <a href={config.manifestStartUrl} rel="noopener noreferrer" aria-label="logo">SegunA.</a>
       <input type="checkbox" className="toggler" />
       <div className="hamburger">
         <div></div>
@@ -46,7 +48,7 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 

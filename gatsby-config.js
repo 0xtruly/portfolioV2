@@ -30,6 +30,7 @@ module.exports = {
           "@layouts": "src/components/Layout",
           "@pages": "src/pages",
           "@sass": "src/assets/sass",
+          "@assets": "src/assets",
           "@config": "src/config",
         },
         extensions: [

@@ -49,21 +49,25 @@ const IndexPage = () => {
           </div>
         </section>
 
-        <section className="resume-section white-bg" id="about">
-          <div className="w-100 flex">
+        <section className="resume-section" id="about">
+          <div
+            className="w-100 flex"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+          >
             <article className="mb-0">
               <div>
-                <h1 className="about-h blue-2 heading">About me</h1>
-                <p className="lead mb-5 black">{config.aboutMe}</p>
+                <h1 className="about-h heading">About me</h1>
+                <p className="lead mb-5">{config.aboutMe}</p>
               </div>
             </article>
             <article className="wd-100">
               <div>
-                <h3 className="blue-2 mb-0">Core Technologies</h3>
+                <h3 className="white-2 mb-0">Core Technologies</h3>
                 <ul className="ls-none m-0 p-0">
                   {config.coreSkills.map(skills => {
                     return (
-                      <li className="black lead" key={skills.tech}>
+                      <li className="lead" key={skills.tech}>
                         {skills.tech}
                       </li>
                     );
@@ -71,11 +75,11 @@ const IndexPage = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="blue-2 mb-0">Others</h3>
+                <h3 className="white-2 mb-0">Others</h3>
                 <ul className="ls-none m-0 p-0">
                   {config.otherSkills.map(skills => {
                     return (
-                      <li className="black lead" key={skills.tech}>
+                      <li className="lead" key={skills.tech}>
                         {skills.tech}
                       </li>
                     );
@@ -93,7 +97,12 @@ const IndexPage = () => {
             {config.projects.map(project => {
               const { details, github, index, name, src, url, tools } = project;
               return (
-                <div className="flex-card">
+                <div
+                  className="flex-card"
+                  data-aos="fade-right"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                >
                   <div className="featured content">
                     <h4>Featured Project</h4>
                     <h5>
@@ -147,12 +156,12 @@ const IndexPage = () => {
           </div>
         </section>
 
-        <section className="resume-section white-bg" id="contact">
+        <section className="resume-section" id="contact">
           <div className="w-100 flex">
             <div className="form-group">
               <article>
                 <h2 className="contact blue-2 heading">Get in touch</h2>
-                <p className="lead mb-5 black">{config.sayHi}</p>
+                <p className="lead mb-5">{config.sayHi}</p>
               </article>
               <form action="https://formspree.io/mgeylaje" method="POST">
                 {config.formStrings.map(str => {
@@ -208,7 +217,7 @@ const IndexPage = () => {
             </aside>
           </div>
         </section>
-        <footer className="resume-section text-c">
+        <footer className="resume-section text-c bg-navy-blue">
           <p className="lead">
             &copy; Segun Adebanjo <span className="lead">{currentDate}</span>.
             All rights reserved

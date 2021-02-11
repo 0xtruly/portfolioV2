@@ -79,7 +79,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-.navbar-nav>a {
+.navbar-nav > a {
   @include heading-font;
 }
 
@@ -126,9 +126,10 @@ h3 {
       border-top: 0;
       border-right: 0;
       border-left: 0;
-      border-bottom: 1px solid $blue-200;
+      border-bottom: 1px solid $white;
       margin: 1.5rem 0;
       outline: none;
+      padding: 4px 0;
     }
 
     textarea.form-field {
@@ -136,7 +137,7 @@ h3 {
     }
 
     .form-field::placeholder {
-      color: $blue-200;
+      color: $white;
       font-size: 17px;
       font-weight: 400;
       @include body-font;
@@ -154,7 +155,7 @@ h3 {
       margin: 10px 0;
       padding: 5px 5px;
       letter-spacing: 2px;
-      color: $blue-200;
+      color: $white;
       border: 1px solid;
       border-radius: 4px;
       outline: 0;
@@ -169,6 +170,10 @@ h3 {
 
 aside.socials {
   padding: 20px;
+
+  @media (max-width: 768px) {
+    margin-top: 30px;
+  }
 
   article {
     position: relative;
@@ -206,8 +211,8 @@ aside.socials {
   color: $black;
 }
 
-.blue-2 {
-  color: $blue-200;
+.white-2 {
+  color: $custom-white;
 }
 
 .bg-white {
@@ -215,7 +220,7 @@ aside.socials {
 }
 
 .bg-navy-blue {
-  background-color: $navy-blue;
+  background-color: $custom-navy;
 }
 
 .heading {
@@ -269,7 +274,8 @@ aside.socials {
   visibility: visible;
   opacity: 1;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+    transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   margin-bottom: 100px;
 
   @media (max-width: 37.5em) {
@@ -401,7 +407,8 @@ aside.socials {
       padding-top: 0;
       margin-top: 10px;
       color: $lemon;
-      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+      font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+        'Lucida Console', Monaco, monospace;
     }
 
     h5 {
@@ -457,7 +464,8 @@ aside.socials {
       // justify-content: flex-end;
 
       li {
-        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+          'Lucida Console', Monaco, monospace;
         font-size: 13px;
         color: rgb(136, 146, 176);
         margin-right: 20px;
@@ -522,11 +530,13 @@ aside.socials {
     padding-top: 1rem;
     text-align: center;
 
+    a,
     a:visited,
     a:active,
     a:hover,
     a:focus {
       text-decoration: none;
+      color: inherit;
     }
   }
 
@@ -634,5 +644,50 @@ aside.socials {
     mix-blend-mode: unset;
     filter: none;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+}
+
+h1[class*='about']::after,
+h2[class*='projects']::after {
+  content: '';
+  border: 1px solid;
+  width: 100%;
+  display: block;
+  height: 1px;
+}
+
+h1[class*='about']::after {
+  transform: translate(60px, -20px) rotate(180deg) scale(0.5);
+
+  @media (max-width: 30em) {
+    transform: translate(100px, -20px) rotate(180deg) scale(0.5);
+  }
+
+  @media (max-width: 20em) {
+    transform: translate(100px, -20px) rotate(180deg) scale(0.4);
+  }
+
+  // @media(max-width: 37.5em) {
+  //   transform: translate(100px, -20px) rotate(180deg) scale(.5);
+  // }
+}
+
+h2[class*='projects']::after {
+  transform: translate(85px, -20px) rotate(180deg) scale(0.5);
+
+  @media (min-width: 22em) {
+    transform: translate(140px, -20px) rotate(180deg) scale(0.2);
+  }
+
+  @media (min-width: 768px) {
+    transform: translate(135px, -20px) rotate(180deg) scale(0.5);
+  }
+
+  @media (min-width: 992px) {
+    transform: translate(215px, -20px) rotate(180deg) scale(0.5);
+  }
+
+  @media (min-width: 1200px) {
+    transform: translate(40px, -20px) rotate(180deg) scale(0.35);
   }
 }
