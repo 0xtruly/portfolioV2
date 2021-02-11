@@ -25,7 +25,7 @@ module.exports = {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/__adeniyi',
+      url: 'https://twitter.com/sublimeaker',
     },
   ],
   email: 'adebanjosegun589@gmail.com',
