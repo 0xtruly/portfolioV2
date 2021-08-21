@@ -161,7 +161,7 @@ module.exports = {
   projectLinks: [
     {
       name: 'Github',
-      url: 'https://github.com/segun-ade',
+      url: 'https://github.com/dekunleroy',
     },
     {
       name: 'Linkedin',
@@ -169,7 +169,7 @@ module.exports = {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/__adeniyi',
+      url: 'https://twitter.com/sublimeaker',
     },
   ],
 };

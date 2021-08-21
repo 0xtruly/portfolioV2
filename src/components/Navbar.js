@@ -10,12 +10,10 @@ export const Navbar = () => {
       { content: 'About', href: 'about' },
       { content: 'Projects', href: 'projects' },
       { content: 'Contact', href: 'contact' },
-      { content: 'Hire Me', href: 'hireme' },
+      // { content: 'Hire Me', href: 'hireme' },
     ]
   );
 
-
-  console.log(tabs)
   return (
     <nav className="menu-wrap">
       <a href={config.manifestStartUrl} rel="noopener noreferrer" aria-label="logo">SegunA.</a>

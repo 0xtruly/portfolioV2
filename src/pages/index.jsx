@@ -8,7 +8,6 @@ import Scroll from '@components/Scroll';
 import Navbar from '@components/Navbar';
 import * as config from '@config';
 import { FormattedIcon, ProjectIcon } from '@components/icons';
-// import ProjectIcon from '../components/icons/projectIcon';
 
 const IndexPage = () => {
   const currentDate = useMemo(() => {
