@@ -163,7 +163,7 @@ const IndexPage = () => {
                 <h2 className="contact blue-2 heading">Get in touch</h2>
                 <p className="lead mb-5">{config.sayHi}</p>
               </article>
-              <form action="https://formspree.io/mgeylaje" method="POST">
+              {/* <form action="https://formspree.io/mgeylaje" method="POST">
                 {config.formStrings.map(str => {
                   const { name, placeHolder, type, key } = str;
                   return (
@@ -191,7 +191,7 @@ const IndexPage = () => {
                   );
                 })}
                 <button className="">Send Message</button>
-              </form>
+              </form> */}
             </div>
             <aside className="socials bg-navy-blue">
               <article>
